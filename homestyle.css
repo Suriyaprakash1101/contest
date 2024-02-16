@@ -1,0 +1,27 @@
+body{
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.info{
+    height: 150px;
+    width: 350px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20%;
+    border: 10px inset grey;
+}
+.info p{
+    text-align: justify;
+    padding: 15px;
+    
+}
+.info h3{
+    text-decoration: underline;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+

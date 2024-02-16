@@ -1,0 +1,249 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(233, 224, 224);
+}
+.l ul{
+    display: flex;
+    flex-direction: row;
+}
+.l a{
+    text-decoration: none;
+    color:black;
+}
+.l li{
+    
+    list-style: none;
+    padding: 10px;
+}
+.l a:hover{
+    color:black;
+}
+.l li:hover{
+    background-color: white;
+    transition: 1s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: teal;
+}
+.nav{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    
+}
+.box-contain{
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    
+    position: relative;
+}
+.count{
+    background-color: grey;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    z-index: 99;
+}
+#cart-icon{
+    
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 15px;
+    background-color: orangered;
+    border-radius: 4px;
+}
+img{
+    width: 100%;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px,auto));
+    gap: 2rem;
+}
+h2.title{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+    
+}
+.food{
+    position: relative;
+    background-color: rgb(168, 173, 177);
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    border-radius: 4px;
+}
+.pic{
+    overflow: hidden;
+}
+.pic:hover img{
+    transform: scale(1.5);
+}
+.food-img{
+    transition: 0.5s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.food-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: blue;
+}
+.food-price{
+    font-weight: 500;
+
+}
+.add-cart{
+    position: absolute;
+    bottom: 20;
+    right: 1rem;
+    background-color: rgb(92, 224, 241);
+    color: rgb(83, 63, 63);
+    padding: 2px;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+.add-cart:hover{
+    background-color: rgb(248, 3, 3);
+    transition: 0.5s;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 25px;
+    background-color: rgb(245, 239, 239);
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+}
+.cart-active{
+    right: 0;
+    transition: 0.5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding:10px;
+    border: 1px solid rgb(202, 190, 190);
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgb(179, 167, 167);
+    padding-bottom: 10px;
+}
+cart-img{
+    width: 75px;;
+    height: 75px;
+    object-fit: cover;
+    border: 3px solid rgba(0,0,0,0.1);
+    padding: 5px;
+}
+.detail{
+    display: grid;
+    row-gap: 1rem;
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-food-title{
+    text-transform: uppercase;
+    color: #ff4757;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 3px solid rgba(0, 0, 0,0.1);
+    outline: none;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color:orangered;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.4rem;
+}
+.tot{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-amt{
+    margin-left: 1rem;
+}
+.btn-buy{
+    padding: 12px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+
+
+}
+#cart-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="icon" href="favicon.jpeg">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Food's point</title>
+</head>
+<body>
+    <header>
+        
+        <div class="nav" >
+            <a href="#" class="logo"><ion-icon name="pizza"></ion-icon>Food's point</a>
+            <div class="l">
+                <ul>
+                    <li><a href="About.html">Home</a></li>
+                    <li><a href="index.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="box-contain">
+                <div class="count">0</div>
+                <ion-icon name="cart" id="cart-icon"></ion-icon>
+            </div>
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="parrota.jpeg" alt="product" class="cart-img" >
+                        <div class="detail">
+                            <div class="cart-food-title">Parrota</div>
+                            <div class="price-box">
+                                
+                                <div class="cart-amt">Rs.42</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <ion-icon name="trash" class="cart-remove"></ion-icon>
+                    </div>
+                    <div class="cart-content">
+                        <div class="cart-box">
+                            <img src="chapati.jpeg" alt="product" class="cart-img" >
+                            <div class="detail">
+                                <div class="cart-food-title">chappati</div>
+                                <div class="price-box">
+                                    
+                                    <div class="cart-amt">Rs.42</div>
+                                </div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <ion-icon name="trash" class="cart-remove"></ion-icon>
+                        </div>
+                        <div class="cart-content">
+                            <div class="cart-box">
+                                <img src="dosa.jpeg" alt="product" class="cart-img" >
+                                <div class="detail">
+                                    <div class="cart-food-title">Dosa</div>
+                                    <div class="price-box">
+                                        
+                                        <div class="cart-amt">Rs.42</div>
+                                    </div>
+                                    <input type="number" value="1" class="cart-quantity">
+                                </div>
+                                <ion-icon name="trash" class="cart-remove"></ion-icon>
+                            </div>
+                    <div class="total">
+                        <div class="tot">Total</div>
+                        <div class="total-amt">Rs.0</div>
+                        <button class="btn-buy">Place Order</button>
+                        <ion-icon name="close" id="cart-close"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="info">
+        <h3>About</h3>
+        <p>Our restaurant established in 2015. We provide lot of spicy and hygenic food our customer</p>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

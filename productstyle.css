@@ -1,0 +1,16 @@
+.shop-content{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 1.5rem;
+    
+}
+.food-box{
+    background-color: white;
+}
+.container{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
